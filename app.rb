@@ -19,8 +19,9 @@ get '/goodbye/:name' do
   @user_name = params[:name]
   "Goodbye, #{@user_name}."
   
-  get '/multiply' do 
-      @user_name = params[:name]
+  get '/multiply/:num1/:num2' do 
+      @num1 = params[:number1].to_i
+    @num2 = params[:number2].to_i
   "Goodbye, #{@user_name}."
 end
 end
